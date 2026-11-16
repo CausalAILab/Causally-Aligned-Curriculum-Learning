@@ -1,0 +1,20 @@
+# Install torch for your platform first (see https://pytorch.org); any recent 2.x build works.
+torch
+numpy<2
+# The code relies on the gymnasium 0.29 vector-env / wrapper APIs (1.x breaks it).
+gymnasium==0.29.1
+minigrid==2.3.1
+scikit-learn
+scipy
+tensorboard
+# tensorboard add_video
+moviepy==1.0.3
+opencv-python
+pygame
+imageio
+tqdm
+requests
+# gym_sokoban imports pkg_resources and matplotlib (not declared by the fork)
+setuptools<81
+matplotlib
+# Not listed here (see README): the gym-sokoban fork (install with --no-deps) and ./nadaraya-watson.
